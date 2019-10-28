@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="transparent-background">
+  <style>
+    body { background-color: rgba(0, 0, 0, 0); }
+  </style>
+  <title>Hello, Prismatic!</title>
+  <script src="https://unpkg.com/@magicleap/prismatic"></script><!-- <script src="prismatic.min.js"></script> -->
+</head>
+<body>
+	<h1> HIII</h1>
+	<ml-model
+	  id="balloon"
+	  src="../balloon.fbx"
+	  style="width: 2000px; height: 1000px;"
+	  model-scale="0.1 0.1 0.1"
+	  z-offset="300px"
+	  unbounded="true"
+	  prism-rotation="0 0 0.25"
+	  move-by="axes: -1200px 400px -400px; 
+		duration: 20s; 
+		track: 1;"
+	  rotate-by-angles="
+		angles: 0 0 -0.5;
+		duration: 15s;
+		track: 2;">
+	</ml-model>
+	
+	<iframe
+  id="embedded-human"
+  frameBorder="0"
+  width="700"
+  height="550"
+  allowFullScreen="true"
+  src="https://human.biodigital.com/widget/?be=3AR7&ui-info=true&ui-zoom=true&ui-share=false&camera=11.542,139.653,7.307,-2.901,134.718,3.468,-0.13,0.991,-0.034&uaid=4XHDb">
+</iframe>
+</body>
+</html>
